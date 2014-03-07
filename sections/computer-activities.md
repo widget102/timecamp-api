@@ -69,7 +69,7 @@ Example:
       "window_title_id":"1234",
       "window_title":"MS Word - Document 1"
     },
-  "1":
+  "2":
     {
       "window_title_id":"3423",
       "window_title":"Yahoo"
