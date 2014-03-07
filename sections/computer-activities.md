@@ -57,10 +57,10 @@ GET /window_title
 Get window titles.
 
 GET parameters:
-* application_ids: ex: 6319,2132 (application ids separated by commas)
+* window_title_ids: ex: 1,2 (application ids separated by commas)
 
 Example:
-`https://www.timecamp.com/third_party/api/window_title/format/json/api_token/a36cabi96bba83f826/window_title_ids/3423,1234`
+`https://www.timecamp.com/third_party/api/window_title/format/json/api_token/a36cabi96bba83f826/window_title_ids/1,2`
 
 ```json
 {
