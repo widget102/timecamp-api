@@ -45,11 +45,6 @@ Response example:
 }
 ```
 
-Rate limiting
--------------
-
-For this moment there is no rate limits.
-
 
 API ready for use
 -----------------
