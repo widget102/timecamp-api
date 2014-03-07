@@ -63,4 +63,4 @@ API ready for use
 Examples
 -----------------
 
-* [PHP Examples](https://github.com/basecamp/bcx-api/blob/master/sections/projects.md)
+* [PHP Examples](https://github.com/timecamp2/timecamp-api/blob/master/sections/php-examples.md)
