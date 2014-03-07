@@ -30,7 +30,7 @@ Example:
 GET /application
 ----------
 
-Get all computer time entries for specific user and day.
+Get applications.
 
 GET parameters:
 * application_ids: ex: 6319,2132 (application ids separated by commas)
@@ -47,6 +47,32 @@ Example:
       "aditional_info":"google.com",
       "full_name":null,
       "category_id":"6"
+    }
+}
+```
+
+GET /window_title
+----------
+
+Get window titles.
+
+GET parameters:
+* application_ids: ex: 6319,2132 (application ids separated by commas)
+
+Example:
+`https://www.timecamp.com/third_party/api/window_title/format/json/api_token/a36cabi96bba83f826/window_title_ids/3423,1234`
+
+```json
+{
+  "1234":
+    {
+      "window_title_id":"1234",
+      "window_title":"MS Word - Document 1"
+    },
+  "3423":
+    {
+      "window_title_id":"3423",
+      "window_title":"Yahoo"
     }
 }
 ```
