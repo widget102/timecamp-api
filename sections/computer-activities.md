@@ -27,19 +27,26 @@ Example:
 ]
 ```
 
-POST /time_entry
+GET /application
 ----------
 
-Add a new time entry.
+Get all computer time entries for specific user and day.
+
+GET parameters:
+* application_ids: ex: 6319,2132 (application ids separated by commas)
 
 Example:
-`https://www.timecamp.com/third_party/api/time_entry/api_token/a36cabi96bba83f826`
+`https://www.timecamp.com/third_party/api/application/format/json/api_token/a36cabi96bba83f826/application_ids/6319`
 
-Post Fields:
-* task_id: 13 (from our API)
-* duration: 3600 (in seconds)
-* date: ‘2013-06-06’
-* note: ‘custom note’ (optional)
-* start: ‘13:30’ (optional)
-* stop: ‘14:23’ (optional)
-
+```json
+{
+  "6319":
+    {
+      "application_id":"6319",
+      "app_name":"Internet",
+      "aditional_info":"google.com",
+      "full_name":null,
+      "category_id":"6"
+    }
+}
+```
