@@ -54,10 +54,10 @@ For this moment there is no rate limits.
 API ready for use
 -----------------
 
-* [Users](https://github.com/basecamp/bcx-api/blob/master/sections/projects.md)
-* [Tasks](https://github.com/basecamp/bcx-api/blob/master/sections/people.md)
-* [Time entries](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md)
-* [Computer activities](https://github.com/basecamp/bcx-api/blob/master/sections/events.md)
+* [Users](https://github.com/timecamp2/timecamp-api/blob/master/sections/users.md)
+* [Tasks](https://github.com/timecamp2/timecamp-api/blob/master/sections/tasks.md)
+* [Time entries](https://github.com/timecamp2/timecamp-api/blob/master/sections/time-entries.md)
+* [Computer activities](https://github.com/timecamp2/timecamp-api/blob/master/sections/computer-activities.md)
 
 
 Examples
