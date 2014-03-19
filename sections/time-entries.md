@@ -7,11 +7,12 @@ GET /entries
 Get time entries started in a specific time range.
 
 GET parameters:
-* task_ids - tasks ids separated by commas, you can leave it empty, so it will get all tasks
-* (optional) with_subtasks = 1, get entries for all subtasks for provided one specific task_ids, put in the url: with_subtasks/1
-* user_ids - user ids separated by commas, you can leave it empty, so it willl get all users
 * from - date range of the time entries returned
 * to - date range of the time entries returned
+* task_ids (optional) - tasks ids separated by commas, you can leave it empty, so it will get all tasks
+* with_subtasks = 1 (optional), get entries for all subtasks for provided one specific task_ids, put in the url: with_subtasks/1
+* user_ids (optional) - user ids separated by commas, you can leave it empty, so it willl get all users
+
 
 Example:
 `https://www.timecamp.com/third_party/api/entries/format/json/api_token/a36cabi96bba83f826/from/2013-02-01/to/2013-03-20/task_ids/3132,3241/user_ids/123`
