@@ -24,6 +24,8 @@ Example:
     "duration":"3600",
     "user_id":"123",
     "description":"",
+    "last_modify":"2014-03-19 14:34:50",
+    "billable":1,
     "task_id":"3132",
     "date":"2013-03-30",
     "start_time":"12:20:00", (this value may be null if user didn’t specify time frame)
