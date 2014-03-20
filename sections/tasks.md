@@ -18,7 +18,7 @@ Add a new task. To add a task you should have proper permissions.
 Example:
 `https://www.timecamp.com/third_party/api/tasks/api_token/a36cabi96bba83f826`
 
-Post Fields:
+Post Variable Array Fields:
 * name: “Task name”
 * keywords: “Keword 1, Keyword 2”
 * parent_id: 0
