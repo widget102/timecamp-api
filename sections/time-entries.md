@@ -43,7 +43,7 @@ Add a new time entry.
 Example:
 `https://www.timecamp.com/third_party/api/time_entry/api_token/a36cabi96bba83f826`
 
-Post Fields:
+Post Variable Array Fields:
 * task_id: 13 (from our API)
 * duration: 3600 (in seconds)
 * date: ‘2013-06-06’
