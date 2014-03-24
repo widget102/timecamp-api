@@ -53,8 +53,8 @@ API ready for use
 * [Tasks](https://github.com/timecamp2/timecamp-api/blob/master/sections/tasks.md)
 * [Time entries](https://github.com/timecamp2/timecamp-api/blob/master/sections/time-entries.md)
 * [Computer activities](https://github.com/timecamp2/timecamp-api/blob/master/sections/computer-activities.md)
-* [Clients](https://github.com/timecamp2/timecamp-api/blob/master/sections/client.md)
-* [Invoices](https://github.com/timecamp2/timecamp-api/blob/master/sections/invoice.md)
+* [Clients](https://github.com/timecamp2/timecamp-api/blob/master/sections/clients.md)
+* [Invoices](https://github.com/timecamp2/timecamp-api/blob/master/sections/invoices.md)
 
 
 Examples
