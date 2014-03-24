@@ -91,6 +91,8 @@ Example:
     "entry_id":"353664",
     "old_time_span":"3960",
     "new_time_span":"3600",
+    "duration":3600,
+    "event_type":"mod",
     "edited":"2014-03-19 15:47:08",
     "user_id":"640",
     "description":"",
