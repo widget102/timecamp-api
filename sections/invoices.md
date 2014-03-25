@@ -7,7 +7,7 @@ GET /invoice
 Return all invoices.
 
 Example:
-`https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826`
+`https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826/format/json`
 
 ```json
 {
@@ -66,7 +66,7 @@ POST /invoice
 Modify existing invoice
 
 Example:
-`https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826`
+`https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826/format/json`
 
 Post Variable Array Fields:
 * clientId: 1234
@@ -82,19 +82,59 @@ PUT /invoice
 Add new invoice.
 
 Example:
-`https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826`
+`https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826/format/json`
 
 Post Variable Array Fields:
-* firstName: "Kamil"
-* lastName: "Rudnicki"
-* organizationName: "Time Solutions Sp. z o.o."
-* address: "Kosciuszki 33/4, NIP: 8943003832"
-* email: "k.rudnicki2@timecamp.com"
+* clientId:145
+* invoiceNumber:1234
+* description:"asdf" (optional)
+* issueDate:2014-03-25 (optional)
+* noteToClient:"note" (optional)
+* poNumber:1234 (optional)
+* currencyId:1 (optional, default USD)
+* entries[0][description]:asdf (optional)
+* entries[0][type]:0 (0=SERVICE, 1=PRODUCT)
+* entries[0][quantity]:2
+* entries[0][unitCost]:22
+* entries[0][taxId]:11
+* entries[0][name]:asdf
+* quote:false (optional)
+
 
 ```json
-[
-  {
-
-  }
-]
+{
+    "clientId":145,
+    "invoiceNumber":"1234",
+    "description":"",
+    "issueDate":"2014-03-25",
+    "dueDate":"",
+    "editDate":"2014-03-25 08:58:17",
+    "status":0,
+    "sentDate":"",
+    "viewedDate":"",
+    "addDate":"2014-03-25 08:58:17",
+    "paidDate":"",
+    "noteToClient":"",
+    "pass":"",
+    "poNumber":"",
+    "userId":"640",
+    "currencyId":1,
+    "rootGroupId":"1208",
+    "publicHash":"cc897bb3808fc20cde79918b080cd0f635804a65",
+    "quote":false,
+    "invoiceId":228,
+    "entries":
+    [
+        {
+            "invoiceId":228,
+            "description":"asdf",
+            "type":0,
+            "quantity":2,
+            "unitCost":22,
+            "taxId":11,
+            "name":"asdf",
+            "invoiceEntryId":598
+        }
+    ]
+}
 ```
