@@ -68,14 +68,6 @@ Modify existing invoice
 Example:
 `https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826/format/json`
 
-Post Variable Array Fields:
-* clientId: 1234
-* firstName: "Kamil"
-* lastName: "Rudnicki"
-* organizationName: "Time Solutions Sp. z o.o."
-* address: "Kosciuszki 33/4, NIP: 8943003832"
-* email: "k.rudnicki2@timecamp.com"
-
 PUT /invoice
 ----------
 
@@ -87,11 +79,12 @@ Example:
 Post Variable Array Fields:
 * clientId:145
 * invoiceNumber:1234
+* currencyId:1 (1=USD)
 * description:"asdf" (optional)
 * issueDate:2014-03-25 (optional)
 * noteToClient:"note" (optional)
 * poNumber:1234 (optional)
-* currencyId:1 (optional, default USD)
+* dueDate:"2014-03-25" (optional)
 * entries[0][description]:asdf (optional)
 * entries[0][type]:0 (0=SERVICE, 1=PRODUCT)
 * entries[0][quantity]:2
