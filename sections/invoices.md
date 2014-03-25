@@ -11,7 +11,7 @@ Example:
 
 ```json
 {
-    {"8":
+    "8":
       {
         "invoiceId":8,
         "clientId":35,
