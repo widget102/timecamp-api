@@ -24,3 +24,5 @@ Post Variable Array Fields:
 * parent_id: 0
 * user_ids: ‘123,563,125’ (optional, comma separated)
 * role: 1 (optional, by default 1, 1=manager, 3=regular user)
+* external_task_id: "string" (optional)
+* external_parent_id: "string" (optional)
