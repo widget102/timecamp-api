@@ -80,6 +80,7 @@ Post Variable Array Fields:
 * clientId:145
 * invoiceNumber:1234
 * currencyId:1 (1=USD)
+* status:0 (0=DRAFT, 1=PENDING, 2=PAID)
 * description:"asdf" (optional)
 * issueDate:2014-03-25 (optional)
 * noteToClient:"note" (optional)
