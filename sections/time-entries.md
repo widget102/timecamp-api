@@ -79,6 +79,7 @@ Get manual changes in time entries made by users. This is only available only wh
 GET parameters:
 * from - date range of the time entries returned like 2014-03-19
 * to - date range of the time entries returned like 2014-03-19
+* limit (optional) - limit for the number of rows (you can puty any number like 1000)
 * task_ids (optional) - tasks ids separated by commas, you can leave it empty, so it will get all tasks
 * user_ids (optional) - user ids separated by commas, you can leave it empty, so it willl get all users
 
