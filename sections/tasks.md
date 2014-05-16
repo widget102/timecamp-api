@@ -26,3 +26,23 @@ Post Variable Array Fields:
 * role: 1 (optional, by default 1, 1=manager, 3=regular user)
 * external_task_id: "string" (optional)
 * external_parent_id: "string" (optional)
+
+PUT /tasks
+----------
+
+Modify existing task. To modify a task you should have proper permissions.
+
+Example:
+`https://www.timecamp.com/third_party/api/tasks/api_token/a36cabi96bba83f826`
+
+Put Variable Array Fields:
+* task_id: 123
+* name: “Task name” (optional)
+* keywords: “Keword 1, Keyword 2” (optional)
+* parent_id: 0 (optional)
+* external_task_id: "string" (optional)
+* external_parent_id: "string" (optional)
+* budgeted: 2 (optional, in hours)
+* note: "string" (optional)
+* archived: 0 (optional, 0=no, 1=yes)
+* billable: 0 (optional, 0=no, 1=yes)
