@@ -35,21 +35,21 @@ Example:
 ]
 ```
 
-POST /time_entry
+POST /entries
 ----------
 
 Add a new time entry.
 
 Example:
-`https://www.timecamp.com/third_party/api/time_entry/api_token/a36cabi96bba83f826`
+`https://www.timecamp.com/third_party/api/entries/api_token/a36cabi96bba83f826`
 
 Post Variable Array Fields:
 * task_id: 13 (from our API)
 * duration: 3600 (in seconds)
 * date: ‘2013-06-06’
 * note: ‘custom note’ (optional)
-* start: ‘13:30’ (optional)
-* stop: ‘14:23’ (optional)
+* start_time: ‘13:30:00’ (optional)
+* end_time: ‘14:23:00’ (optional)
 
 GET /timer_running
 ----------
