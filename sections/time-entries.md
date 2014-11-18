@@ -51,6 +51,25 @@ Post Variable Array Fields:
 * start_time: ‘13:30:00’ (optional)
 * end_time: ‘14:23:00’ (optional)
 
+PUT /entries
+----------
+
+Update existing time entry.
+
+Example:
+`https://www.timecamp.com/third_party/api/entries/api_token/a36cabi96bba83f826`
+
+Put Variable Array Fields:
+* id: 13 (entry id)
+* duration: 3600 (in seconds, optional)
+* note: ‘custom note’ (optional)
+* start_time: ‘13:30:00’ (optional)
+* end_time: ‘14:23:00’ (optional)
+* billable: ‘1’ (optional - 1/0)
+* invoiceId: ‘123’ (optional)
+* task_id: ‘123’ (optional)
+* updateActivities: 1 (optional - 1/0)
+
 GET /timer_running
 ----------
 
