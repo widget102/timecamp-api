@@ -55,7 +55,7 @@ API ready for use
 * [Computer activities](https://github.com/timecamp2/timecamp-api/blob/master/sections/computer-activities.md)
 * [Clients](https://github.com/timecamp2/timecamp-api/blob/master/sections/clients.md)
 * [Invoices](https://github.com/timecamp2/timecamp-api/blob/master/sections/invoices.md)
-
+* [Attendance](https://github.com/timecamp2/timecamp-api/blob/master/sections/attendance.md) (new)
 
 Examples
 -----------------
