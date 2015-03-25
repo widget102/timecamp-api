@@ -17,12 +17,16 @@ Example:
   "email":"j.olszak@timecamp.com",
   "login_count":"123",
   "display_name":"Jakub Olszak"
+  "synch_time":"2015-03-25 12:12:12"
+  "login_time":"2015-03-26 12:12:12"
 },
 {
   "user_id":"640",
   "email":"k.rudnicki@timecamp.com",
   "login_count":"5170",
   "display_name":"Kamil Rudnicki"
+  "synch_time":"2015-03-25 12:12:12"
+  "login_time":"2015-03-25 12:12:12"
 }
 ]
 ```
