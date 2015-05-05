@@ -28,9 +28,9 @@ Example:
     "billable":1,
     "task_id":"3132",
     "date":"2013-03-30",
-    "start_time":'12:20:00', (this value may be null if user didn’t specify time frame)
+    "start_time":'12:20:00', //(this value may be null if user didn’t specify time frame)
     “name”:'Task name',
-    “addons_external_id”:123241 (for integrations with Trello, Pivotal Tracker, etc.),
+    “addons_external_id”:123241 //(for integrations with Trello, Pivotal Tracker, etc.),
     "billable":0/1,
     "invoiceId:null/invoiceId
   }
@@ -49,9 +49,9 @@ Post Variable Array Fields:
 * task_id: 13 (from our API)
 * duration: 3600 (in seconds)
 * date: ‘2013-06-06’
+* start_time: ‘13:30:00’
+* end_time: ‘14:23:00’
 * note: ‘custom note’ (optional)
-* start_time: ‘13:30:00’ (optional)
-* end_time: ‘14:23:00’ (optional)
 
 PUT /entries
 ----------
