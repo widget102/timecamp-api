@@ -28,9 +28,9 @@ Example:
     "billable":1,
     "task_id":"3132",
     "date":"2013-03-30",
-    "start_time":'12:20:00', //(this value may be null if user didn’t specify time frame)
+    "start_time":'12:20:00', (this value may be null if user did not specify time frame)
     “name”:'Task name',
-    “addons_external_id”:123241 //(for integrations with Trello, Pivotal Tracker, etc.),
+    “addons_external_id”:123241 (for integrations with Trello, Pivotal Tracker, etc.),
     "billable":0/1,
     "invoiceId:null/invoiceId
   }
