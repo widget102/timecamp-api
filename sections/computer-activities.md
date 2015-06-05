@@ -76,3 +76,19 @@ Example:
     }
 }
 ```
+
+POST /activity
+----------
+
+Add a new computer activities.
+
+Example:
+`https://www.timecamp.com/third_party/api/activity/api_token/a36cabi96bba83f826`
+
+Post Variable Array Fields:
+* computer_activities: array[0]
+  * application_name: ‘Internet‘ (for websites use Internet, for other apps use process name)
+  * website_domain: ‘yahoo.com‘
+  * window_title: ‘example window title’ (optional)
+  * start_time: ‘2015-03-03 13:33:00’
+  * end_time: ‘2015-03-03 13:34:00’
