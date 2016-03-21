@@ -26,6 +26,7 @@ Post Variable Array Fields:
 * role: 1 (optional, by default 1, 1=manager, 3=regular user)
 * external_task_id: "string" (optional)
 * external_parent_id: "string" (optional)
+* budget_unit: "string" (optional, hours/fee)
 
 PUT /tasks
 ----------
@@ -46,3 +47,4 @@ Put Variable Array Fields:
 * note: "string" (optional)
 * archived: 0 (optional, 0=no, 1=yes)
 * billable: 0 (optional, 0=no, 1=yes)
+* budget_unit: "string" (optional, hours/fee)
