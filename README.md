@@ -52,6 +52,7 @@ API ready for use
 * [Users](https://github.com/timecamp2/timecamp-api/blob/master/sections/users.md)
 * [Tasks](https://github.com/timecamp2/timecamp-api/blob/master/sections/tasks.md)
 * [Time entries](https://github.com/timecamp2/timecamp-api/blob/master/sections/time-entries.md)
+* [Timer](https://github.com/timecamp2/timecamp-api/blob/master/sections/timer.md)
 * [Computer activities](https://github.com/timecamp2/timecamp-api/blob/master/sections/computer-activities.md)
 * [Clients](https://github.com/timecamp2/timecamp-api/blob/master/sections/clients.md)
 * [Invoices](https://github.com/timecamp2/timecamp-api/blob/master/sections/invoices.md)
