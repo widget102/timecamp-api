@@ -48,3 +48,5 @@ Put Variable Array Fields:
 * archived: 0 (optional, 0=no, 1=yes)
 * billable: 0 (optional, 0=no, 1=yes)
 * budget_unit: "string" (optional, hours/fee)
+* user_ids: ‘123,563,125’ (optional, comma separated)
+* role: 1 (optional, by default 1, 1=manager, 3=regular user)
