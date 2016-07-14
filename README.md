@@ -63,3 +63,4 @@ Examples
 -----------------
 
 * [PHP Examples](https://github.com/timecamp2/timecamp-api/blob/master/sections/php-examples.md)
+* [JS Examples](https://github.com/timecamp2/timecamp-api/blob/master/sections/js-examples.md)
