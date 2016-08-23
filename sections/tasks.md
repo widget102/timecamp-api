@@ -10,7 +10,11 @@ Get Variable Array Fields:
 * (optional) exclude_archived: 1 or 0 (default - we give both archived and not archived tasks)
 
 Example:
+
+(data is returned in default - XML format, for JSON data format add ...tasks**/format/json/**api_token... in request url)
+
 `https://www.timecamp.com/third_party/api/tasks/api_token/a36cabi96bba83f826`
+
 `https://www.timecamp.com/third_party/api/tasks/api_token/a36cabi96bba83f826/task_id/1234`
 
 POST /tasks
@@ -23,7 +27,7 @@ Example:
 
 Post Variable Array Fields:
 * name: “Task name”
-* keywords: “Keword 1, Keyword 2”
+* tags: “Tag 1, Tag 2”
 * parent_id: 0
 * user_ids: ‘123,563,125’ (optional, comma separated)
 * role: 1 (optional, by default 1, 1=manager, 3=regular user)
@@ -42,7 +46,7 @@ Example:
 Put Variable Array Fields:
 * task_id: 123
 * name: “Task name” (optional)
-* keywords: “Keword 1, Keyword 2” (optional)
+* tags: “Tag 1, Tag 2” (optional)
 * parent_id: 0 (optional)
 * external_task_id: "string" (optional)
 * external_parent_id: "string" (optional)
