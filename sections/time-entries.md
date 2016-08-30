@@ -10,8 +10,8 @@ GET parameters:
 * from - date range of the time entries returned
 * to - date range of the time entries returned
 * task_ids (optional) - tasks ids separated by commas, you can leave it empty, so it will get all tasks
-* with_subtasks = 1 (optional), get entries for all subtasks for provided one specific task_ids, put in the url: with_subtasks/1
-* user_ids (optional) - user ids separated by commas, you can leave it empty, so it willl get all users
+* with_subtasks = 1 (optional), get entries bound to any task (task_id != "0"), put in the url: with_subtasks/1
+* user_ids (optional) - user ids separated by commas, you can leave it empty, so it will get all users, if there is only one user_id provided and this id is wrong, it will also get all users
 
 
 Example:
@@ -21,18 +21,18 @@ Example:
 [
   {
     "id":"3621",
-    "duration":"3600",
+    "duration":"3600", // in seconds
     "user_id":"123",
     "description":"",
     "last_modify":"2014-03-19 14:34:50",
     "billable":1,
     "task_id":"3132",
     "date":"2013-03-30",
-    "start_time":"12:20:00", // (this value may be null if user did not specify time frame)
+    "start_time":"12:20:00", // this value may be null if user did not specify time frame
     "name":"Task name",
-    "addons_external_id":123241 // (for integrations with Trello, Pivotal Tracker, etc.),
+    "addons_external_id":"123241", // for integrations with Trello, Pivotal Tracker, etc., "0" if no integration
     "billable":0/1,
-    "invoiceId":null/invoiceId
+    "invoiceId":0/invoiceId
   }
 ]
 ```
@@ -46,12 +46,13 @@ Example:
 `https://www.timecamp.com/third_party/api/entries/api_token/a36cabi96bba83f826`
 
 Post Variable Array Fields:
-* task_id: 13 (from our API)
-* duration: 3600 (in seconds)
-* date: ‘2013-06-06’
-* start_time: ‘13:30:00’
-* end_time: ‘14:23:00’
+* date: ‘2013-06-06’ (__required__)
+* duration: 3600 (__required__, in seconds)
 * note: ‘custom note’ (optional)
+* start_time: ‘13:30:00’ (optional)
+* end_time: ‘14:23:00’ (optional)
+* billable: ‘1’ (optional - 1/0)
+* task_id: ‘123’ (optional)
 
 PUT /entries
 ----------
@@ -62,7 +63,7 @@ Example:
 `https://www.timecamp.com/third_party/api/entries/api_token/a36cabi96bba83f826`
 
 Put Variable Array Fields:
-* id: 13 (entry id)
+* id: 13 (__required__, entry id)
 * duration: 3600 (in seconds, optional)
 * note: ‘custom note’ (optional)
 * start_time: ‘13:30:00’ (optional)
@@ -113,7 +114,7 @@ Example:
     "entry_id":"353664",
     "old_time_span":"3960",
     "new_time_span":"3600",
-    "duration":3600,
+    "duration":"3600",
     "event_type":"mod",
     "edited":"2014-03-19 15:47:08",
     "user_id":"640",
