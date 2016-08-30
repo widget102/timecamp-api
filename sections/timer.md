@@ -10,10 +10,10 @@ Example:
 `https://www.timecamp.com/third_party/api/timer/api_token/a36cabi96bba83f826`
 
 Post Variable Array Fields:
-* action: "start"
+* action: "start" (__required__)
 * task_id: 123 (optional)
-* entry_id: "create"
-* started_at: ‘2016-04-19 10:50:11’
+* entry_id: "create" (optional)
+* started_at: ‘2016-04-19 10:50:11’ (uses current time if omitted)
 
 Response:
 {
