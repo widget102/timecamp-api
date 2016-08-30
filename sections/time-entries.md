@@ -17,7 +17,7 @@ GET parameters:
 Example:
 `https://www.timecamp.com/third_party/api/entries/format/json/api_token/a36cabi96bba83f826/from/2013-02-01/to/2013-03-20/task_ids/3132,3241/user_ids/123`
 
-```json
+```bash
 [
   {
     "id":"3621",
@@ -28,11 +28,11 @@ Example:
     "billable":1,
     "task_id":"3132",
     "date":"2013-03-30",
-    "start_time":'12:20:00', (this value may be null if user did not specify time frame)
-    “name”:'Task name',
-    “addons_external_id”:123241 (for integrations with Trello, Pivotal Tracker, etc.),
+    "start_time":"12:20:00", // (this value may be null if user did not specify time frame)
+    "name":"Task name",
+    "addons_external_id":123241 // (for integrations with Trello, Pivotal Tracker, etc.),
     "billable":0/1,
-    "invoiceId:null/invoiceId
+    "invoiceId":null/invoiceId
   }
 ]
 ```
