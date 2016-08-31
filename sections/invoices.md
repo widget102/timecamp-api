@@ -63,7 +63,7 @@ Example:
 POST /invoice
 ----------
 
-Modify existing invoice
+Modify existing invoice.
 
 Example:
 `https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826/format/json`
@@ -76,23 +76,25 @@ Add new invoice.
 Example:
 `https://www.timecamp.com/third_party/api/invoice/api_token/a36cabi96bba83f826/format/json`
 
-Post Variable Array Fields:
-* clientId:145
-* invoiceNumber:1234
-* currencyId:1 (1=USD)
-* status:0 (0=DRAFT, 1=PENDING, 2=PAID)
+Put Variable Array Fields:
+* invoiceId:145 (__required__)
+* clientId:145 (optional)
+* invoiceNumber:1234 (optional)
+* currencyId:1 (optional, 1=USD, , all available IDs can be found here: `GET https://www.timecamp.com/third_party/api/currency/format/json/api_token/a36cabi96bba83f826`)
+* status:0 (0=DRAFT, 1=PENDING, 2=PAID, default: 0)
 * description:"asdf" (optional)
-* issueDate:2014-03-25 (optional)
+* issueDate:2014-03-25 (optional, default: today)
 * noteToClient:"note" (optional)
 * poNumber:1234 (optional)
 * dueDate:"2014-03-25" (optional)
-* entries[0][description]:asdf (optional)
-* entries[0][type]:0 (0=SERVICE, 1=PRODUCT)
-* entries[0][quantity]:2
-* entries[0][unitCost]:22
-* entries[0][taxId]:11
-* entries[0][name]:asdf
-* quote:false (optional)
+* quote:false (optional, default: false)
+* entries: array of objects, available properties listed below:
+  * description:"asdf" (optional)
+  * type:0 (0=SERVICE, 1=PRODUCT, default: 0)
+  * quantity:2 (optional)
+  * unitCost:22 (optional)
+  * taxId:11 (optional, use one of taxes defined by current user, all available IDs can be found here: GET https://www.timecamp.com/third_party/api/tax/format/json/api_token/a36cabi96bba83f826, default: -1)
+  * name:"asdf"
 
 
 ```json
